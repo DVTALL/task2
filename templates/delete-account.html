@@ -1,0 +1,64 @@
+
+
+{% load static %}
+
+<html> 
+
+    <head>
+
+        <title> Simply | Delete account </title>
+
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/morph/bootstrap.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+    </head>
+
+    <br>
+
+    <div class="container bg-white shadow-md p-5 form-layout" style="width: 500px;">
+
+        <form method="POST" autocomplete="off">
+
+            {% csrf_token %}
+
+            <p> Are you sure that you want to delete your account? </p>
+            
+            <br> <br>
+            
+            <a href="{% url 'profile-management' %}"> Go back </a>
+
+            <br>
+
+            <br>
+
+            <input class="btn btn-primary" type="submit" value="Submit"/>
+
+
+        </form>
+
+    </div>
+
+
+    <script src="{% static 'js/app.js' %}"></script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
